@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VQ Agent Console — VisionQuantech</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">
+    <div class="logo">VQ</div>
+    <div>
+      <h1>VQ Agent Console</h1>
+      <p>VisionQuantech &middot; live AI-agent webhooks</p>
+    </div>
+  </div>
+  <div class="settings">
+    <label for="baseUrl">n8n base URL</label>
+    <input id="baseUrl" type="text" spellcheck="false" placeholder="https://automation-832k.onrender.com">
+    <button id="saveBase" class="btn small">Save</button>
+  </div>
+</header>
+
+<div class="honesty">
+  <strong>Demo console.</strong> Every button below fires a <em>live</em> POST to your n8n instance and shows the real
+  JSON/TwiML response. Scoring, replies, triage and plans run for real &mdash; but WhatsApp / SMS / email / call
+  <em>delivery</em> needs your provider keys (Twilio, Exotel, Gmail) connected first.
+</div>
+
+<nav class="groups" id="groupNav"></nav>
+<main id="panels"></main>
+
+<footer>
+  <p><strong>How it works:</strong> form &rarr; JSON payload &rarr; <code>POST {base}/webhook/{path}</code> &rarr; n8n workflow &rarr; JSON response below.</p>
+  <p>Use <em>Copy as cURL</em> on any panel to run the same call from your terminal. Base URL is stored in this browser only.</p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
