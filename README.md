@@ -35,3 +35,7 @@ Or just double-click `index.html` (file:// works for layout; webhook POSTs need 
 Unzip anywhere and serve the folder as static files (Nginx, Apache, Netlify Drop,
 Cloudflare Pages, GitHub Pages, Render Static Site). No server code, no secrets —
 the n8n base URL lives in the visitor's browser localStorage.
+
+## Built by VisionQuantech
+
+Part of the [VisionQuantech](https://visionquantech.com/) AI automation studio. See [AI agents for business](https://visionquantech.com/ai-agents-for-business) and the guide to [AI phone answering for dental clinics](https://visionquantech.com/blog/ai-phone-answering-service-for-dental-clinics).
